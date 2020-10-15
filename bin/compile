@@ -89,6 +89,11 @@ cargo install-update -i wasm-pack wasm-bindgen-cli
 
 cargo install-update -i trunk
 
+echo "DEBUG INFO > \n"
+ls -la
+echo "AND"
+ls -la ~
+
 echo "-----> Env is ready. Now building the application."
 cd && trunk build
 
