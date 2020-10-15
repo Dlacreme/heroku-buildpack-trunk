@@ -76,8 +76,6 @@ else
     rm rustup.sh
 fi
 
-echo "> CARGO IS AVAILABLE IN $CARGO_HOME"
-
 echo "-----> Installing wasm target"
 rustup target add wasm32-unknown-unknown
 
@@ -87,15 +85,8 @@ cargo install cargo-update || true
 echo "-----> Updating wasm-pack and wasm-bindgen-cli"
 cargo install-update -i wasm-pack wasm-bindgen-cli
 
+echo "-----> Installing trunk"
 cargo install-update -i trunk
-
-echo "DEBUG INFO > \n"
-ls -la
-echo "AND"
-ls -la ~
-
-echo "-----> Env is ready. Now building the application."
-cd && trunk build
 
 if [ ! -x "$CARGO_HOME/bin/rustc" ]; then
   echo "failed: Cannot find Rust binaries at $CARGO_HOME"
