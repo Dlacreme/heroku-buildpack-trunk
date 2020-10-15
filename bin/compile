@@ -83,7 +83,7 @@ echo "-----> Installing cargo-update"
 cargo install cargo-update || true
 
 echo "-----> Updating wasm-pack and wasm-bindgen-cli"
-cargo install-update -i wasm-pack wasm-bindgen-clip
+cargo install-update -i wasm-pack wasm-bindgen-cli
 
 echo "-----> Installing trunk"
 cargo install trunk
