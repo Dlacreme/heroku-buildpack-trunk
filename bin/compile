@@ -85,9 +85,7 @@ cargo install cargo-update || true
 echo "-----> Updating wasm-pack and wasm-bindgen-cli"
 cargo install-update -i wasm-pack wasm-bindgen-cli
 
-echo "-----> Installing trunk"
-cargo install trunk
-
+cargo install-update -i trunk
 trunk build
 
 if [ ! -x "$CARGO_HOME/bin/rustc" ]; then
