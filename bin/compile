@@ -88,7 +88,7 @@ cargo install-update -i wasm-pack wasm-bindgen-cli
 echo "-----> Installing trunk"
 cargo install-update -i trunk
 
-if [ ! -x "$CARGO_HOME/bin/rustc" ]; then
-  echo "failed: Cannot find Rust binaries at $CARGO_HOME"
-  exit 1
-fi
+echo "-----> Now build the application..."
+cd "$BUILD_DIR"
+echo ls
+trunk build
