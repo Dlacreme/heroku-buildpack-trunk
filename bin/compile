@@ -91,3 +91,5 @@ cargo install-update -i trunk
 echo "-----> Now building the application...(this might take a while.)"
 cd "$BUILD_DIR"
 trunk build
+
+echo "-----> Job is done."
